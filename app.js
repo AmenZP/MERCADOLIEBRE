@@ -18,6 +18,14 @@ app.listen(port, () => {
   console.log("Server Running!");
 });
 
+app.get("/login", (req, res) => {
+  res.sendFile(path.resolve("./views/login.html"));
+});
+
+app.get("/registro", (req, res) => {
+  res.sendFile(path.resolve("./views/registro.html"));
+});
+
 // const express = require("express");
 // const app = express();
 // app.use(express.static("public"));

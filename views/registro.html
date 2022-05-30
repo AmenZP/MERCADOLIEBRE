@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"
+    />
+
+    <title>Register</title>
+  </head>
+  <body>
+    <div class="container-header">
+      <header>
+        <div class="top-header">
+          <div class="logo">
+            <img
+              src="/img/logo-mercado-liebre.svg"
+              alt="Logo de mercadoliebre"
+            />
+          </div>
+          <div class="form" action="#" method="GET">
+            <div class="input">Buscar productos, marcas y mas</div>
+          </div>
+          <div class="compra-en-cuotas">
+            <p>
+              <i class="fas fa-hand-holding-usd"
+                >Compra en cuotas y sin tarjeta de credito</i
+              >
+            </p>
+            <!-- <div class="lupa">Aqui va una lupa</div> -->
+          </div>
+        </div>
+        <nav>
+          <div class="nav-items-menu">
+            <ul class="nav-items-menu-hijo">
+              <li><a href="#">Ofertas</a></li>
+              <li><a href="#">Tiendas Oficiales</a></li>
+              <li><a href="#">Vender</a></li>
+              <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="nav-items-menu-hijo2">
+              <li>
+                <a href="/registro"
+                  >Creá tu cuenta <i class="far fa-id-card"></i
+                ></a>
+              </li>
+              <li>
+                <a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a>
+              </li>
+              <li>
+                <a href="#"
+                  >Mis compras <i class="fas fa-shopping-basket"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <div class="burger">
+          <i class="fa fa-bars burger"></i>
+        </div>
+      </header>
+    </div>
+    <main>
+      <section>
+        <form action="">
+          <label for="">
+            <div class="input-login">
+              <input
+                class="controles"
+                type="text"
+                name="Nombre"
+                placeholder="Nombre y apellido"
+                required
+              />
+
+              <input
+                class="controles"
+                type="text"
+                name="usuario"
+                placeholder="Nombre de usuario"
+                required
+              />
+
+              <input
+                class="controles"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+                required
+              />
+
+              <p class="titulos-registro">Fecha de nacimiento</p>
+
+              <input class="fecha-bday" type="date" name="bday" required />
+
+              <input
+                class="controles"
+                type="text"
+                name="direccion"
+                placeholder="Domicilio"
+                required
+              />
+
+              <p class="titulos-registro">Perfil de usuario</p>
+
+              <div class="boton-tipo-usuario">
+                <input type="radio" name="tipodeusuario" value="Vendedor" />
+                <label class="label-tipousuario" for="tipodeusuario"
+                  >Comprador</label
+                >
+
+                <input type="radio" name="tipodeusuario" value="Vendedor" />
+                <label class="label-tipousuario" for="tipodeusuario"
+                  >Vendedor</label
+                >
+              </div>
+
+              <p class="titulos-registro">Intereses</p>
+
+              <div class="boton-intereses">
+                <div class="intereses-check">
+                  <input
+                    type="checkbox"
+                    name="tipodeusuario"
+                    value="Vendedor"
+                  />
+                  <label class="label-tipousuario" for="intereses"
+                    >Electro</label
+                  >
+                </div>
+
+                <div class="intereses-check">
+                  <input type="checkbox" name="intereses" value="Vendedor" />
+                  <label class="checkbox-intereses" for="intereses">Moda</label>
+                </div>
+
+                <div class="intereses-check">
+                  <input type="checkbox" name="intereses" value="Vendedor" />
+                  <label class="checkbox-intereses" for="intereses"
+                    >Hogar</label
+                  >
+                </div>
+
+                <div class="intereses-check">
+                  <input type="checkbox" name="intereses" value="Vendedor" />
+                  <label class="checkbox-intereses" for="intereses"
+                    >Jugueteria</label
+                  >
+                </div>
+
+                <div class="intereses-check">
+                  <input type="checkbox" name="intereses" value="Vendedor" />
+                  <label class="checkbox-intereses" for="intereses"
+                    >Vida Sana</label
+                  >
+                </div>
+              </div>
+
+              <p class="titulos-registro">Seleccione su foto de usuario</p>
+
+              <input type="file" name="file" />
+
+              <p class="titulos-registro">Crea tu contraseña</p>
+
+              <input
+                class="controles"
+                type="password"
+                name="contraseña"
+                placeholder="Elegi tu contraseña"
+                required
+              />
+
+              <input
+                class="controles"
+                type="password"
+                name="contraseña"
+                placeholder="Confirma tu contraseña"
+                required
+              />
+
+              <input
+                href="/index"
+                class="boton-enviar-login"
+                type="submit"
+                name=""
+                value="Enviar"
+              />
+
+              <input class="boton-enviar-login" type="reset" value="Borrar" />
+            </div>
+          </label>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
