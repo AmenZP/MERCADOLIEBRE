@@ -6,17 +6,22 @@ const app = express();
 
 const port = process.env.PORT || 3300;
 
+app.listen(port, () => {
+  console.log("Server Running!");
+});
+
 app.use(express.static("public"));
 
 app.use(express.static(path.resolve("./views/index.html")));
+app.use(express.static(path.resolve("./views/login.html")));
+app.use(express.static(path.resolve("./views/registro.html")));
+
+
 
 app.get("/", (req, res) => {
   res.sendFile(__dirname + "/views/index.html");
 });
 
-app.listen(port, () => {
-  console.log("Server Running!");
-});
 
 app.get("/login", (req, res) => {
   res.sendFile(path.resolve("./views/login.html"));
